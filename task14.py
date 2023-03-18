@@ -3,7 +3,7 @@
 
 num = int(input("Введите число: "))
 
-num_in_power = 1
-while num_in_power < num:
-    print(num_in_power, end=" ")
-    num_in_power *= 2
+i = 0
+while 2 ** i <= num:
+    print(2 ** i)
+    i += 1
