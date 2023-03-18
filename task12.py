@@ -5,12 +5,7 @@
 sum_of_numbers = int(input("Введите сумму чисел: "))
 product_of_numbers = int(input("Введите произведение чисел: "))
 
-num1 = 1
-num2 = 1
-while sum_of_numbers != num1 + num2 and product_of_numbers != num1 * num2:
-    if product_of_numbers != (sum_of_numbers - num2) * num2:
-        num2 += 1
-    if num1 != sum_of_numbers - num2:
-        num1 += 1
-
-print(num1, num2)
+for i in range(sum_of_numbers):
+    for j in range(product_of_numbers):
+        if sum_of_numbers == i + j and product_of_numbers == i * j:
+            print(i, j)
