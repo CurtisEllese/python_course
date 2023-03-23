@@ -25,6 +25,6 @@ print(list_1)
 # print(list_2)
 
 # list_1 = [1, 2, 3, 4, 5]
-# k = int(input("Введите число сдвига: "))
+# k = int(input("Введите число сдвига: ")) % len(list_1)
 
 # print(list_1[k:] + list_1[:k])
