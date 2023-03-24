@@ -27,10 +27,10 @@ word = input('Введите слово: ').upper()
 total = 0
 
 for letter in word:
-    for key, val in scrabble_dict_eng.items():
+    for key in scrabble_dict_eng:
         if letter in scrabble_dict_eng[key]:
             total += key
-    for key, val in scrabble_dict_rus.items():
+    for key in scrabble_dict_rus:
         if letter in scrabble_dict_rus[key]:
             total += key
 
