@@ -4,15 +4,15 @@
 # 2 2
 #     4
 
-first_num = int(input("Введите первое число: "))
-second_num = int(input("Введите второе число: "))
-
 def recursive_sum(num1, num2):
     if num1 == 0:
         return num2
     if num2 == 0:
         return num1
     return recursive_sum(num1 - 1, num2 + 1)
+
+first_num = int(input("Введите первое число: "))
+second_num = int(input("Введите второе число: "))
 
 res = recursive_sum(first_num, second_num)
 print(res)
