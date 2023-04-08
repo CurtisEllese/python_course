@@ -14,14 +14,18 @@ def check_less_adjacent(list1):
             count += 1
     return count
 
-def fill_list(list_len, text="Введите элемент списка: "):
-    res_list = list()
-    for item in range(list_len):
-        res_list.append(int(input(text)))
-    return res_list
+# def fill_list(list_len, text="Введите элемент списка: "):
+#     res_list = list()
+#     for item in range(list_len):
+#         res_list.append(int(input(text)))
+#     return res_list
 
-list_length = int(input("Введите длину списка: "))
-input_list = fill_list(list_length)
-print(input_list)
+# list_length = int(input("Введите длину списка: "))
+# input_list = fill_list(list_length)
+# print(input_list)
 
-print(check_less_adjacent(input_list))
+# print(check_less_adjacent(input_list))
+
+list1 = [int(input(f"Введите {i} элемент списка: ")) for i in range(int(input("Введите длину списка: ")))]
+print(list1)
+print(check_less_adjacent(list1))
